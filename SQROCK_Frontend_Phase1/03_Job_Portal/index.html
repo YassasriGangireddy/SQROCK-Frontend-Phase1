@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub - Job Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">
+            Career<span>Hub</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#about">About</a>
+            <a href="#login">Login</a>
+            <a href="#register" class="register-btn">Register</a>
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO CAREERHUB</p>
+
+            <h1>
+                Find Your Dream
+                <span>Job Today</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover thousands of job opportunities from top companies
+                and take the next step in your career.
+            </p>
+
+            <!-- SEARCH BOX -->
+            <div class="search-box">
+
+                <div class="search-input">
+                    <span>🔍</span>
+                    <input
+                        type="text"
+                        id="jobSearch"
+                        placeholder="Job title or keyword"
+                    >
+                </div>
+
+                <div class="search-input">
+                    <span>📍</span>
+                    <input
+                        type="text"
+                        id="locationSearch"
+                        placeholder="Location"
+                    >
+                </div>
+
+                <button onclick="searchJobs()">
+                    Search Jobs
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JOBS SECTION ================= -->
+    <section class="jobs-section" id="jobs">
+
+        <div class="section-heading">
+            <p>EXPLORE OPPORTUNITIES</p>
+            <h2>Featured Jobs</h2>
+            <span>
+                Find the right opportunity and build your future.
+            </span>
+        </div>
+
+
+        <div class="job-container" id="jobContainer">
+
+            <!-- JOB 1 -->
+            <div class="job-card">
+
+                <div class="company-logo">
+                    💻
+                </div>
+
+                <div class="job-info">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <h3>Frontend Developer</h3>
+
+                    <h4>TechNova Solutions</h4>
+
+                    <p>📍 Bangalore, India</p>
+
+                    <p>💰 ₹5 LPA - ₹8 LPA</p>
+
+                    <p class="job-date">
+                        Posted 2 days ago
+                    </p>
+
+                </div>
+
+                <div class="job-actions">
+                    <button class="save-btn"
+                            onclick="saveJob(this)">
+                        ♡
+                    </button>
+
+                    <button class="apply-btn"
+                            onclick="applyJob('Frontend Developer')">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- JOB 2 -->
+            <div class="job-card">
+
+                <div class="company-logo">
+                    📊
+                </div>
+
+                <div class="job-info">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <h3>Data Analyst</h3>
+
+                    <h4>DataWorks Pvt Ltd</h4>
+
+                    <p>📍 Hyderabad, India</p>
+
+                    <p>💰 ₹4 LPA - ₹7 LPA</p>
+
+                    <p class="job-date">
+                        Posted 3 days ago
+                    </p>
+
+                </div>
+
+                <div class="job-actions">
+
+                    <button class="save-btn"
+                            onclick="saveJob(this)">
+                        ♡
+                    </button>
+
+                    <button class="apply-btn"
+                            onclick="applyJob('Data Analyst')">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- JOB 3 -->
+            <div class="job-card">
+
+                <div class="company-logo">
+                    🤖
+                </div>
+
+                <div class="job-info">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <h3>AI / ML Engineer</h3>
+
+                    <h4>FutureAI Technologies</h4>
+
+                    <p>📍 Pune, India</p>
+
+                    <p>💰 ₹7 LPA - ₹12 LPA</p>
+
+                    <p class="job-date">
+                        Posted 1 day ago
+                    </p>
+
+                </div>
+
+                <div class="job-actions">
+
+                    <button class="save-btn"
+                            onclick="saveJob(this)">
+                        ♡
+                    </button>
+
+                    <button class="apply-btn"
+                            onclick="applyJob('AI / ML Engineer')">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- JOB 4 -->
+            <div class="job-card">
+
+                <div class="company-logo">
+                    🌐
+                </div>
+
+                <div class="job-info">
+
+                    <span class="job-type">
+                        Internship
+                    </span>
+
+                    <h3>Web Development Intern</h3>
+
+                    <h4>WebTech Solutions</h4>
+
+                    <p>📍 Chennai, India</p>
+
+                    <p>💰 ₹15K - ₹25K / Month</p>
+
+                    <p class="job-date">
+                        Posted 4 days ago
+                    </p>
+
+                </div>
+
+                <div class="job-actions">
+
+                    <button class="save-btn"
+                            onclick="saveJob(this)">
+                        ♡
+                    </button>
+
+                    <button class="apply-btn"
+                            onclick="applyJob('Web Development Intern')">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JOB DETAILS ================= -->
+    <section class="job-details">
+
+        <div class="section-heading">
+
+            <p>JOB INFORMATION</p>
+
+            <h2>Why Choose CareerHub?</h2>
+
+            <span>
+                Everything you need to find and apply for your next opportunity.
+            </span>
+
+        </div>
+
+
+        <div class="details-container">
+
+            <div class="detail-box">
+                <div class="detail-icon">🔎</div>
+
+                <h3>Search Jobs</h3>
+
+                <p>
+                    Search jobs by title, keyword and location
+                    to find opportunities that match your skills.
+                </p>
+            </div>
+
+
+            <div class="detail-box">
+                <div class="detail-icon">📄</div>
+
+                <h3>Easy Apply</h3>
+
+                <p>
+                    Apply for your favorite jobs quickly and
+                    take the next step toward your career.
+                </p>
+            </div>
+
+
+            <div class="detail-box">
+                <div class="detail-icon">⭐</div>
+
+                <h3>Save Jobs</h3>
+
+                <p>
+                    Save interesting jobs and come back later
+                    when you are ready to apply.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COMPANIES ================= -->
+    <section class="companies" id="companies">
+
+        <div class="section-heading">
+
+            <p>TOP EMPLOYERS</p>
+
+            <h2>Companies Hiring Now</h2>
+
+            <span>
+                Explore opportunities from leading organizations.
+            </span>
+
+        </div>
+
+
+        <div class="company-container">
+
+            <div class="company-card">
+                <div>💻</div>
+                <h3>TechNova</h3>
+                <p>Technology</p>
+            </div>
+
+            <div class="company-card">
+                <div>📊</div>
+                <h3>DataWorks</h3>
+                <p>Data & Analytics</p>
+            </div>
+
+            <div class="company-card">
+                <div>🤖</div>
+                <h3>FutureAI</h3>
+                <p>Artificial Intelligence</p>
+            </div>
+
+            <div class="company-card">
+                <div>🌐</div>
+                <h3>WebTech</h3>
+                <p>Web Development</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <p class="section-label">
+                ABOUT CAREERHUB
+            </p>
+
+            <h2>
+                Connecting Talent With
+                <span>Opportunity</span>
+            </h2>
+
+            <p>
+                CareerHub is a modern job portal designed to connect
+                talented candidates with companies looking for skilled
+                professionals.
+            </p>
+
+            <p>
+                Whether you are a fresher searching for your first job,
+                an experienced professional looking for a career change,
+                or an employer searching for talented candidates,
+                CareerHub makes the process simple.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <strong>10K+</strong>
+                    <span>Active Jobs</span>
+                </div>
+
+                <div>
+                    <strong>500+</strong>
+                    <span>Companies</span>
+                </div>
+
+                <div>
+                    <strong>20K+</strong>
+                    <span>Job Seekers</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOGIN ================= -->
+    <section class="auth-section" id="login">
+
+        <div class="auth-box">
+
+            <h2>Candidate Login</h2>
+
+            <p>Login to manage your job applications.</p>
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+            >
+
+            <input
+                type="password"
+                placeholder="Enter your password"
+            >
+
+            <button onclick="loginUser()">
+                Login
+            </button>
+
+            <p>
+                Don't have an account?
+                <a href="#register">Register</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REGISTER ================= -->
+    <section class="auth-section" id="register">
+
+        <div class="auth-box">
+
+            <h2>Create Account</h2>
+
+            <p>Join CareerHub and start your job search.</p>
+
+            <input
+                type="text"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+            >
+
+            <input
+                type="password"
+                placeholder="Create Password"
+            >
+
+            <button onclick="registerUser()">
+                Register
+            </button>
+
+            <p>
+                Already have an account?
+                <a href="#login">Login</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EMPLOYER DASHBOARD ================= -->
+    <section class="dashboard">
+
+        <div class="section-heading">
+
+            <p>FOR EMPLOYERS</p>
+
+            <h2>Employer Dashboard</h2>
+
+            <span>
+                Manage your job postings easily.
+            </span>
+
+        </div>
+
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    ➕
+                </div>
+
+                <h3>Post a Job</h3>
+
+                <p>
+                    Create and publish new job opportunities.
+                </p>
+
+                <button onclick="postJob()">
+                    Post Job
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    ✏️
+                </div>
+
+                <h3>Edit Jobs</h3>
+
+                <p>
+                    Update your existing job information.
+                </p>
+
+                <button onclick="editJob()">
+                    Edit Job
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    🗑️
+                </div>
+
+                <h3>Delete Jobs</h3>
+
+                <p>
+                    Remove outdated job postings.
+                </p>
+
+                <button onclick="deleteJob()">
+                    Delete Job
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <div class="logo">
+                    Career<span>Hub</span>
+                </div>
+
+                <p>
+                    Find your dream job and build your
+                    future with CareerHub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#jobs">Jobs</a>
+                <a href="#companies">Companies</a>
+                <a href="#about">About</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>For Candidates</h3>
+
+                <a href="#jobs">Browse Jobs</a>
+                <a href="#login">Login</a>
+                <a href="#register">Register</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Contact</h3>
+
+                <p>📧 careerhub@example.com</p>
+                <p>📍 India</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 CareerHub. All Rights Reserved.
+            </p>
+
+            <p>
+                SQROCK IT SOLUTIONS – Frontend Development Internship
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

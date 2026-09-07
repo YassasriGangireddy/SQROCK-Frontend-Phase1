@@ -1,0 +1,11 @@
+SQROCK Frontend Phase 1
+
+[ ] Replace personal placeholders
+[ ] Test Portfolio: Home/About/Skills/Projects/Resume/Contact
+[ ] Test Movie: Search + all genres + responsive cards
+[ ] Test Job Portal: Search + filters + details + Apply + Login/Register + Post Job
+[ ] Push all source code to GitHub
+[ ] Deploy all 3 projects
+[ ] Take screenshots
+[ ] Add GitHub links and live links to submission
+[ ] Publish LinkedIn post and tag Sqrock IT Solutions
